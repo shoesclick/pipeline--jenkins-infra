@@ -12,16 +12,9 @@ class KubernatesTools {
 
     def deployK8s(Parameters model, serviceName, servicePath) {
         systemCmd.steps().stage('Deploy '+ serviceName) {
-            replaceGatewayFile(model)
             systemCmd.steps().dir(model.workspaceJob +'/'+ servicePath) {
                 systemCmd.cmd('kubectl apply -k .')
             }
         }
     }
-
-    def replaceGatewayFile(Parameters model){
-        def fileUtils = new FileUtils("${model.workspaceJob}/namespace-gateway.yaml");
-        fileUtils.replaceGatewayNamespace(model);
-    }
-
 }
