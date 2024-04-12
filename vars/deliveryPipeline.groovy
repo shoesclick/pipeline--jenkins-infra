@@ -10,8 +10,6 @@ def call(body) {
     def sysCmd = new WinCmd(this)
 
     def gitHubTools = new GitHubTools(sysCmd)
-    def dockerTools = new DockerTools(sysCmd)
-    def sonarTools = new SonarTools(sysCmd)
     def kubernatesTools = new KubernatesTools(sysCmd)
 
     body.resolveStrategy = Closure.DELEGATE_FIRST
