@@ -1,29 +1,9 @@
 <?xml version='1.1' encoding='UTF-8'?>
-<flow-definition plugin="workflow-job@1341.vd9fa_65f771dd">
-  <actions/>
+<flow-definition plugin="workflow-job@1400.v7fd111b_ec82f">
   <description></description>
   <keepDependencies>false</keepDependencies>
-  <properties>
-    <hudson.model.ParametersDefinitionProperty>
-      <parameterDefinitions>
-        <net.uaznia.lukanus.hudson.plugins.gitparameter.GitParameterDefinition plugin="git-parameter@0.9.19">
-          <name>BRANCH_NAME</name>
-          <uuid>366bddb1-5a9c-4f22-817c-9aac320a592f</uuid>
-          <type>PT_BRANCH_TAG</type>
-          <branch></branch>
-          <tagFilter>*</tagFilter>
-          <branchFilter>.*</branchFilter>
-          <sortMode>NONE</sortMode>
-          <defaultValue>origin/master</defaultValue>
-          <selectedValue>NONE</selectedValue>
-          <quickFilterEnabled>false</quickFilterEnabled>
-          <listSize>5</listSize>
-          <requiredParameter>false</requiredParameter>
-        </net.uaznia.lukanus.hudson.plugins.gitparameter.GitParameterDefinition>
-      </parameterDefinitions>
-    </hudson.model.ParametersDefinitionProperty>
-  </properties>
-  <definition class="org.jenkinsci.plugins.workflow.cps.CpsScmFlowDefinition" plugin="workflow-cps@3773.v505e0052522c">
+  <properties/>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsScmFlowDefinition" plugin="workflow-cps@3894.vd0f0248b_a_fc4">
     <scm class="hudson.plugins.git.GitSCM" plugin="git@5.2.1">
       <configVersion>2</configVersion>
       <userRemoteConfigs>
@@ -42,7 +22,7 @@
       <extensions/>
     </scm>
     <scriptPath>Jenkinsfile</scriptPath>
-    <lightweight>false</lightweight>
+    <lightweight>true</lightweight>
   </definition>
   <triggers/>
   <disabled>false</disabled>
