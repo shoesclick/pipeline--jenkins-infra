@@ -60,7 +60,7 @@ Definir:
 * **Default version: master - branch do projeto**
 * **Retrieval method: Modern SCM**
 * **Source Code Management: Git**
-* **Project Repository: git@github.com:shoesclick/pipeline--jenkins-shoesclick-stack.git - Utilzando o SSH**
+* **Project Repository: git@github.com:shoesclick/pipeline--jenkins-infra.git - Utilzando o SSH**
 * **Credential: git**
 
 #### Gerenciar Jenkins >> Configurar Sistema (System) >> Propriedades globais
