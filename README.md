@@ -86,7 +86,7 @@ Importante: Execute os jobs onde se encontram os arquivos xml (diretório jenkin
 
 ```
 java -jar <CAMINHO_DO_JAR>/jenkins-cli.jar -s http://<URL_JENKINS> -auth <USUARIO_TOKEN>:<TOKEN_GERADO> create-job k8s--infra-deploy < k8s--infra-deploy.xml
-
+java -jar <CAMINHO_DO_JAR>/jenkins-cli.jar -s http://<URL_JENKINS> -auth <USUARIO_TOKEN>:<TOKEN_GERADO> create-job k8s--shoes-observability < k8s--shoes-observability.xml
 ``
 
 
