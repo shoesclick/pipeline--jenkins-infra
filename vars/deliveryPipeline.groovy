@@ -32,11 +32,11 @@ def call(body) {
                 env.PROJECT_NAME,
                 env.K8S_SERVICE_NAME,
                 env.K8S_NAMESPACE,
-        );
+        )
 
         println("revision: ${revision}")
         params.package_manager.each{ stepName, stepDir ->  kubernatesTools.deployK8s(parameters,stepName,stepDir) }
-       
+
      }
 
 
