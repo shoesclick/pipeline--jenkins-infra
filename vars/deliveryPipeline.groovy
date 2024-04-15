@@ -35,12 +35,9 @@ def call(body) {
         );
 
         println("revision: ${revision}")
-        kubernatesTools.deployK8s(parameters,"Mysql","mysql")
-        kubernatesTools.deployK8s(parameters,"Redis","redis")
-        kubernatesTools.deployK8s(parameters,"Zookeeper","kafka/zookeeper")
-        kubernatesTools.deployK8s(parameters,"Kafka Broker","kafka/kafka-broker")
-        kubernatesTools.deployK8s(parameters,"Kafka Broker","kafka/schema-registry")
-    }
+        params.package_manager.each{ stepName, stepDir ->  kubernatesTools.deployK8s(parameters,stepName,stepDir) }
+       
+     }
 
 
 }
