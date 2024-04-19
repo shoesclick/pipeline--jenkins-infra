@@ -65,6 +65,8 @@ Definir:
 
 #### Gerenciar Jenkins >> Configurar Sistema (System) >> Propriedades globais
 
+* **Name/Value: SYSTEM_OPERATION = <sistema operacional: "Windows" ou "Linux">**
+
 ## Salvar.
 
 ## Criando um Token de usuário para utilziar o Jenkins Cli:
